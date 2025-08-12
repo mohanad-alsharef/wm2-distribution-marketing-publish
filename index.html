@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WM2 Distribution Marketing</title>
+    <title>WM2 Distribution Marketing - Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -18,22 +18,236 @@
         }
       }
     </script>
-    <script src="https://unpkg.com/@babel/standalone@7.24.9/babel.min.js"></script>
+    <style>
+      /* Simple transition for accordion */
+      .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+      }
+      .accordion-content.open {
+        max-height: 24rem; /* 384px, adjust as needed */
+      }
+    </style>
   <script type="importmap">
 {
   "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
     "react/": "https://esm.sh/react@^19.1.1/",
     "react": "https://esm.sh/react@^19.1.1",
-    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
     "react-router-dom": "https://esm.sh/react-router-dom@^7.8.0"
   }
 }
 </script>
 <link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-brand-light">
-    <div id="root"></div>
-    <script type="text/babel" data-type="module" src="./index.tsx"></script>
+  <body class="bg-brand-light text-gray-800">
+    <!-- Header -->
+    <header class="bg-gray-800 shadow-lg sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <a href="./index.html" class="flex-shrink-0">
+              <div class="text-2xl font-bold tracking-wider text-white">WM2</div>
+            </a>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a href="./index.html" class="px-3 py-2 rounded-md text-sm font-medium text-white bg-gray-900" aria-current="page">Home</a>
+              <a href="./about.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">About Us</a>
+              <a href="./faq.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">FAQ</a>
+              <a href="https://example.com/blog" target="_blank" rel="noopener noreferrer" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Company Blog</a>
+            </div>
+          </div>
+          <div class="-mr-2 flex md:hidden">
+            <button
+              id="mobile-menu-button"
+              type="button"
+              class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg id="hamburger-icon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <svg id="close-icon" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="md:hidden hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="./index.html" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900" aria-current="page">Home</a>
+          <a href="./about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">About Us</a>
+          <a href="./faq.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">FAQ</a>
+          <a href="https://example.com/blog" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Company Blog</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <div class="relative bg-gray-900 text-white">
+        <div class="absolute inset-0">
+          <img class="w-full h-full object-cover" src="https://picsum.photos/1600/900" alt="Inspiring background" />
+          <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8 text-center">
+          <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">Unlock Your Potential with WM2</h1>
+          <p class="mt-6 max-w-2xl mx-auto text-xl text-gray-300">Join a community of entrepreneurs and build your own path to financial freedom. Your journey starts now.</p>
+          <div class="mt-8 flex justify-center">
+            <div class="inline-flex rounded-md shadow">
+              <a href="./faq.html" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-100">
+                Join Now
+              </a>
+            </div>
+            <div class="ml-3 inline-flex">
+              <a href="./about.html" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-700 hover:bg-gray-600">
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Why Join Section -->
+      <section class="bg-gray-100 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center">
+            <h2 class="text-3xl font-extrabold text-gray-900">Why Join WM2?</h2>
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-600">
+              We provide the tools, the community, and the opportunity. You bring the ambition.
+            </p>
+          </div>
+          <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+              <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-gray-800 text-white mb-6">
+                 <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                 </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900">Financial Freedom</h3>
+              <p class="mt-2 text-base text-gray-600">Create a new stream of income with a flexible and rewarding compensation plan.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+              <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-gray-800 text-white mb-6">
+                 <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm0 2c-2.21 0-4 1.79-4 4v1h8v-1c0-2.21-1.79-4-4-4z" />
+                 </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900">Be Your Own Boss</h3>
+              <p class="mt-2 text-base text-gray-600">Enjoy the flexibility of setting your own hours and working from anywhere.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+              <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-gray-800 text-white mb-6">
+                 <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.653-.28-1.259-.75-1.676M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.653.28-1.259.75-1.676M12 12c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3z" />
+                 </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900">Supportive Community</h3>
+              <p class="mt-2 text-base text-gray-600">Connect with a network of like-minded individuals who will support you on your journey.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works Section -->
+      <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-gray-600 font-semibold tracking-wide uppercase">How It Works</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    A Simple Path to Success
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    We've simplified the process so you can focus on what matters: growing your business.
+                </p>
+            </div>
+            <div class="mt-10 grid items-center gap-10 md:grid-cols-3">
+                <div class="text-center">
+                    <img class="h-48 w-48 rounded-full mx-auto shadow-lg object-cover" src="https://picsum.photos/200/200?random=1" alt="Step 1">
+                    <h3 class="mt-6 text-xl font-bold text-gray-900">1. Join Our Team</h3>
+                    <p class="mt-2 text-gray-600">Sign up and get instant access to our products and training materials.</p>
+                </div>
+                <div class="text-center">
+                     <img class="h-48 w-48 rounded-full mx-auto shadow-lg object-cover" src="https://picsum.photos/200/200?random=2" alt="Step 2">
+                    <h3 class="mt-6 text-xl font-bold text-gray-900">2. Share Products</h3>
+                    <p class="mt-2 text-gray-600">Share high-quality products you believe in with your network.</p>
+                </div>
+                <div class="text-center">
+                     <img class="h-48 w-48 rounded-full mx-auto shadow-lg object-cover" src="https://picsum.photos/200/200?random=3" alt="Step 3">
+                    <h3 class="mt-6 text-xl font-bold text-gray-900">3. Earn Rewards</h3>
+                    <p class="mt-2 text-gray-600">Earn commissions and bonuses based on your sales and team performance.</p>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="bg-gray-900 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-white text-center">Success Stories</h2>
+            <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                    <img class="h-20 w-20 rounded-full mx-auto object-cover" src="https://picsum.photos/100/100?random=4" alt="Testimonial from Alex Johnson">
+                    <blockquote class="mt-6 text-gray-300">
+                        <p class="text-lg">"Joining WM2 was the best decision of my life. I finally have the freedom I always dreamed of."</p>
+                    </blockquote>
+                    <footer class="mt-4">
+                        <p class="text-base font-medium text-white">Alex Johnson</p>
+                    </footer>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                    <img class="h-20 w-20 rounded-full mx-auto object-cover" src="https://picsum.photos/100/100?random=5" alt="Testimonial from Maria Garcia">
+                    <blockquote class="mt-6 text-gray-300">
+                        <p class="text-lg">"The support from the community is incredible. I never feel like I'm alone on this journey."</p>
+                    </blockquote>
+                    <footer class="mt-4">
+                        <p class="text-base font-medium text-white">Maria Garcia</p>
+                    </footer>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                    <img class="h-20 w-20 rounded-full mx-auto object-cover" src="https://picsum.photos/100/100?random=6" alt="Testimonial from Chris Lee">
+                    <blockquote class="mt-6 text-gray-300">
+                        <p class="text-lg">"I was skeptical at first, but the results speak for themselves. This is a real opportunity."</p>
+                    </blockquote>
+                    <footer class="mt-4">
+                        <p class="text-base font-medium text-white">Chris Lee</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+      <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center">
+          <p class="text-center text-sm text-gray-400">&copy; 2024 WM2. All rights reserved.</p>
+          <div class="flex space-x-6">
+            <a href="#" class="text-gray-400 hover:text-white">
+              <span class="sr-only">Facebook</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <span class="sr-only">Twitter</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
   <script type="module" src="/index.tsx"></script>
 </body>
 </html>
