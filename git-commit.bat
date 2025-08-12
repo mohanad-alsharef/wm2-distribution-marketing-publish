@@ -8,6 +8,10 @@ echo Checking current status...
 git status
 echo.
 
+echo Ensuring .cursor is not tracked (safe to ignore errors)...
+git rm -r --cached .cursor >nul 2>&1
+echo.
+
 echo Adding all changes...
 git add .
 echo.
@@ -16,7 +20,7 @@ echo Changes added successfully!
 echo.
 
 set /p commit_message="Enter commit message (or press Enter for default): "
-if "%commit_message%"=="" set commit_message="Update website content"
+if "%commit_message%"=="" set commit_message="Static cleanup: remove React assets, add .gitignore .cursor, update footers"
 
 echo Committing with message: %commit_message%
 git commit -m %commit_message%
