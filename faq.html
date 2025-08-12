@@ -37,7 +37,7 @@
         <div class="flex items-center justify-between h-16">
           <div class="flex items-center">
             <a href="./index.html" class="flex-shrink-0">
-              <div class="text-2xl font-bold tracking-wider text-white">WM2</div>
+              <img src="./assets/logo.jpg" alt="WM2 Logo" class="h-8 w-auto">
             </a>
           </div>
           <div class="hidden md:block">
@@ -45,7 +45,18 @@
               <a href="./index.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Home</a>
               <a href="./about.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">About Us</a>
               <a href="./faq.html" class="px-3 py-2 rounded-md text-sm font-medium text-white bg-gray-900" aria-current="page">FAQ</a>
-              <a href="https://example.com/blog" target="_blank" rel="noopener noreferrer" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Company Blog</a>
+              <div class="relative group">
+                <button class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 flex items-center">
+                  Members
+                  <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                  <a href="https://wm2.store/" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Members Store</a>
+                  <a href="https://members.wm2.store/" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Members Account</a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="-mr-2 flex md:hidden">
@@ -72,7 +83,11 @@
           <a href="./index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Home</a>
           <a href="./about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">About Us</a>
           <a href="./faq.html" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900" aria-current="page">FAQ</a>
-          <a href="https://example.com/blog" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Company Blog</a>
+          <div class="border-t border-gray-700 pt-2">
+            <p class="px-3 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wider">Members</p>
+            <a href="https://wm2.store/" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Members Store</a>
+            <a href="https://members.wm2.store/" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Members Account</a>
+          </div>
         </div>
       </div>
     </header>
@@ -95,84 +110,159 @@
             <!-- FAQ Item 1 -->
             <div class="accordion-item border-b border-gray-200">
               <button class="accordion-button flex justify-between items-center w-full py-5 px-5 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none" aria-expanded="false">
-                <span>What is WM2 distribution marketing?</span>
+                <span>How can I place an order?</span>
                 <svg class="accordion-icon w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div class="accordion-content">
                 <div class="p-5 text-gray-600">
-                  WM2 is a distribution marketing company that empowers individuals to earn income by selling high-quality products directly to consumers and building a network of other distributors. This is a placeholder text, you can replace it with your own content.
+                  If you are a registered member, you can visit our store to place your order.
                 </div>
               </div>
             </div>
             <!-- FAQ Item 2 -->
             <div class="accordion-item border-b border-gray-200">
               <button class="accordion-button flex justify-between items-center w-full py-5 px-5 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none" aria-expanded="false">
-                <span>How do I get started with WM2?</span>
+                <span>How can I receive my order?</span>
                 <svg class="accordion-icon w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div class="accordion-content">
                 <div class="p-5 text-gray-600">
-                  Getting started is simple! Click the "Join Now" button on our homepage, fill out the registration form, and you'll get immediate access to our starter kit and training materials. This is a placeholder text, you can replace it with your own content.
+                  You can pick up your order from our warehouses in Jeddah or Riyadh at the following times:<br>
+                  Sunday to Thursday: 6:00 PM – 10:00 PM
                 </div>
               </div>
             </div>
             <!-- FAQ Item 3 -->
             <div class="accordion-item border-b border-gray-200">
               <button class="accordion-button flex justify-between items-center w-full py-5 px-5 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none" aria-expanded="false">
-                <span>Is there a startup cost?</span>
+                <span>Do you offer delivery?</span>
                 <svg class="accordion-icon w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div class="accordion-content">
                 <div class="p-5 text-gray-600">
-                  Yes, there is a small initial investment for our starter kit, which includes product samples, business tools, and access to our online portal. This investment is designed to set you up for success. This is a placeholder text, you can replace it with your own content.
+                  Yes, delivery is available in Jeddah and Riyadh for an additional 15 SAR.<br>
+                  Delivery Days: Tuesday, Friday, and Saturday.
                 </div>
               </div>
             </div>
             <!-- FAQ Item 4 -->
             <div class="accordion-item border-b border-gray-200">
               <button class="accordion-button flex justify-between items-center w-full py-5 px-5 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none" aria-expanded="false">
-                <span>How do I earn money?</span>
+                <span>How can I register?</span>
                 <svg class="accordion-icon w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div class="accordion-content">
                 <div class="p-5 text-gray-600">
-                  You can earn money in two primary ways: through commissions on your personal sales and through bonuses based on the sales of the distributors you recruit and train. This is a placeholder text, you can replace it with your own content.
+                  Registration is by invitation only. You need an invitation link from an existing registered member.
                 </div>
               </div>
             </div>
-             <!-- FAQ Item 5 -->
+            <!-- FAQ Item 5 -->
             <div class="accordion-item border-b border-gray-200">
               <button class="accordion-button flex justify-between items-center w-full py-5 px-5 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none" aria-expanded="false">
-                <span>Do I need any prior sales experience?</span>
+                <span>How can I invite others?</span>
                 <svg class="accordion-icon w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div class="accordion-content">
                 <div class="p-5 text-gray-600">
-                  No prior experience is necessary. We provide comprehensive training and a supportive community to help you learn everything you need to know to succeed. This is a placeholder text, you can replace it with your own content.
+                  Once registered, you will receive a personal invitation link that you can share to invite new members.
                 </div>
               </div>
             </div>
             <!-- FAQ Item 6 -->
-            <div class="accordion-item">
+            <div class="accordion-item border-b border-gray-200">
               <button class="accordion-button flex justify-between items-center w-full py-5 px-5 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none" aria-expanded="false">
-                <span>What kind of products does WM2 offer?</span>
+                <span>How can I request a withdrawal?</span>
                 <svg class="accordion-icon w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div class="accordion-content">
                 <div class="p-5 text-gray-600">
-                   We offer a diverse range of high-quality products in the health, wellness, and lifestyle sectors. All our products are ethically sourced and rigorously tested. This is a placeholder text, you can replace it with your own content.
+                  Please refer to our tutorial video for detailed instructions.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ Item 7 -->
+            <div class="accordion-item border-b border-gray-200">
+              <button class="accordion-button flex justify-between items-center w-full py-5 px-5 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none" aria-expanded="false">
+                <span>What's the best way to demonstrate the product as a seller?</span>
+                <svg class="accordion-icon w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="accordion-content">
+                <div class="p-5 text-gray-600">
+                  We recommend purchasing and using the 10ml tester sample set. This allows customers to experience the product firsthand, and you can offer them a price lower than the original retail price.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ Item 8 -->
+            <div class="accordion-item border-b border-gray-200">
+              <button class="accordion-button flex justify-between items-center w-full py-5 px-5 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none" aria-expanded="false">
+                <span>What are the pickup and delivery options?</span>
+                <svg class="accordion-icon w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="accordion-content">
+                <div class="p-5 text-gray-600">
+                  <strong>Pickup:</strong> Jeddah or Riyadh warehouses, Sunday–Thursday, 6:00 PM – 10:00 PM<br><br>
+                  <strong>Delivery:</strong> Jeddah & Riyadh only, 15 SAR fee, available Tuesday, Friday, and Saturday.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ Item 9 -->
+            <div class="accordion-item border-b border-gray-200">
+              <button class="accordion-button flex justify-between items-center w-full py-5 px-5 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none" aria-expanded="false">
+                <span>How can I earn money?</span>
+                <svg class="accordion-icon w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="accordion-content">
+                <div class="p-5 text-gray-600">
+                  • By directly selling the products.<br>
+                  • By earning commission from purchases made by members you invited via your referral link.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ Item 10 -->
+            <div class="accordion-item border-b border-gray-200">
+              <button class="accordion-button flex justify-between items-center w-full py-5 px-5 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none" aria-expanded="false">
+                <span>What are the benefits of joining?</span>
+                <svg class="accordion-icon w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="accordion-content">
+                <div class="p-5 text-gray-600">
+                  • Access to high-quality products at lower prices.<br>
+                  • Opportunity to earn extra income through resale or referrals.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ Item 11 -->
+            <div class="accordion-item">
+              <button class="accordion-button flex justify-between items-center w-full py-5 px-5 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none" aria-expanded="false">
+                <span>What payment methods are available?</span>
+                <svg class="accordion-icon w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="accordion-content">
+                <div class="p-5 text-gray-600">
+                  Currently, we only accept cash payments.
                 </div>
               </div>
             </div>

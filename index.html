@@ -37,7 +37,7 @@
         <div class="flex items-center justify-between h-16">
           <div class="flex items-center">
             <a href="./index.html" class="flex-shrink-0">
-              <div class="text-2xl font-bold tracking-wider text-white">WM2</div>
+              <img src="./assets/logo.jpg" alt="WM2 Logo" class="h-8 w-auto">
             </a>
           </div>
           <div class="hidden md:block">
@@ -45,7 +45,18 @@
               <a href="./index.html" class="px-3 py-2 rounded-md text-sm font-medium text-white bg-gray-900" aria-current="page">Home</a>
               <a href="./about.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">About Us</a>
               <a href="./faq.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">FAQ</a>
-              <a href="https://example.com/blog" target="_blank" rel="noopener noreferrer" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Company Blog</a>
+              <div class="relative group">
+                <button class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 flex items-center">
+                  Members
+                  <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                  <a href="https://wm2.store/" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Members Store</a>
+                  <a href="https://members.wm2.store/" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Members Account</a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="-mr-2 flex md:hidden">
@@ -72,7 +83,11 @@
           <a href="./index.html" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900" aria-current="page">Home</a>
           <a href="./about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">About Us</a>
           <a href="./faq.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">FAQ</a>
-          <a href="https://example.com/blog" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Company Blog</a>
+          <div class="border-t border-gray-700 pt-2">
+            <p class="px-3 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wider">Members</p>
+            <a href="https://wm2.store/" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Members Store</a>
+            <a href="https://members.wm2.store/" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Members Account</a>
+          </div>
         </div>
       </div>
     </header>
