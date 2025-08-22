@@ -42,19 +42,19 @@
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
-              <a href="./index.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Home</a>
-              <a href="./about.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">About Us</a>
-              <a href="./faq.html" class="px-3 py-2 rounded-md text-sm font-medium text-white bg-gray-900" aria-current="page">FAQ</a>
+              <a href="./index.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700" data-translate="nav.home">Home</a>
+              <a href="./about.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700" data-translate="nav.about">About Us</a>
+              <a href="./faq.html" class="px-3 py-2 rounded-md text-sm font-medium text-white bg-gray-900" aria-current="page" data-translate="nav.faq">FAQ</a>
               <div class="relative group">
                 <button class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 flex items-center">
-                  Members
+                  <span data-translate="nav.members">Members</span>
                   <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                   </svg>
                 </button>
                 <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  <a href="https://wm2.store/" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Members Store</a>
-                  <a href="https://members.wm2.store/" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Members Account</a>
+                  <a href="https://wm2.store/" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" data-translate="nav.members-store">Members Store</a>
+                  <a href="https://members.wm2.store/" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" data-translate="nav.members-account">Members Account</a>
                 </div>
               </div>
             </div>
@@ -80,13 +80,13 @@
       </div>
       <div class="md:hidden hidden" id="mobile-menu">
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a href="./index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Home</a>
-          <a href="./about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">About Us</a>
-          <a href="./faq.html" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900" aria-current="page">FAQ</a>
+          <a href="./index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700" data-translate="nav.home">Home</a>
+          <a href="./about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700" data-translate="nav.about">About Us</a>
+          <a href="./faq.html" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900" aria-current="page" data-translate="nav.faq">FAQ</a>
           <div class="border-t border-gray-700 pt-2">
-            <p class="px-3 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wider">Members</p>
-            <a href="https://wm2.store/" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Members Store</a>
-            <a href="https://members.wm2.store/" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Members Account</a>
+            <p class="px-3 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wider" data-translate="nav.members">Members</p>
+            <a href="https://wm2.store/" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700" data-translate="nav.members-store">Members Store</a>
+            <a href="https://members.wm2.store/" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700" data-translate="nav.members-account">Members Account</a>
           </div>
         </div>
       </div>
@@ -97,8 +97,8 @@
       <div class="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto">
           <div class="text-center">
-            <h2 class="text-3xl font-extrabold text-gray-900">Frequently Asked Questions</h2>
-            <p class="mt-4 text-lg text-gray-500">
+            <h2 class="text-3xl font-extrabold text-gray-900" data-translate="faq.title">Frequently Asked Questions</h2>
+            <p class="mt-4 text-lg text-gray-500" data-translate="faq.subtitle">
               Can't find the answer you're looking for? Reach out to our
               <a href="#" class="font-medium text-gray-700 hover:text-gray-600">
                 customer support
@@ -110,13 +110,13 @@
             <!-- FAQ Item 1 -->
             <div class="accordion-item border-b border-gray-200">
               <button class="accordion-button flex justify-between items-center w-full py-5 px-5 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none" aria-expanded="false">
-                <span>What are the benefits of joining?</span>
+                <span data-translate="faq.q1">What are the benefits of joining?</span>
                 <svg class="accordion-icon w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div class="accordion-content">
-                <div class="p-5 text-gray-600">
+                <div class="p-5 text-gray-600" data-translate="faq.a1">
                   • Access to high-quality products at lower prices.<br>
                   • Opportunity to earn extra income through resale or referrals.
                 </div>
@@ -125,13 +125,13 @@
             <!-- FAQ Item 2 -->
             <div class="accordion-item border-b border-gray-200">
               <button class="accordion-button flex justify-between items-center w-full py-5 px-5 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none" aria-expanded="false">
-                <span>How can I register?</span>
+                <span data-translate="faq.q2">How can I register?</span>
                 <svg class="accordion-icon w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div class="accordion-content">
-                <div class="p-5 text-gray-600">
+                <div class="p-5 text-gray-600" data-translate="faq.a2">
                   Registration is by invitation only. You need an invitation link from an existing registered member.
                 </div>
               </div>
@@ -139,13 +139,13 @@
             <!-- FAQ Item 3 -->
             <div class="accordion-item border-b border-gray-200">
               <button class="accordion-button flex justify-between items-center w-full py-5 px-5 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none" aria-expanded="false">
-                <span>How can I invite others?</span>
+                <span data-translate="faq.q3">How can I invite others?</span>
                 <svg class="accordion-icon w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div class="accordion-content">
-                <div class="p-5 text-gray-600">
+                <div class="p-5 text-gray-600" data-translate="faq.a3">
                   Once registered, you will receive a personal invitation link that you can share to invite new members.
                 </div>
               </div>
@@ -153,13 +153,13 @@
             <!-- FAQ Item 4 -->
             <div class="accordion-item border-b border-gray-200">
               <button class="accordion-button flex justify-between items-center w-full py-5 px-5 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none" aria-expanded="false">
-                <span>How can I earn money?</span>
+                <span data-translate="faq.q4">How can I earn money?</span>
                 <svg class="accordion-icon w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div class="accordion-content">
-                <div class="p-5 text-gray-600">
+                <div class="p-5 text-gray-600" data-translate="faq.a4">
                   • By directly selling the products.<br>
                   • By earning commission from purchases made by members you invited via your referral link.
                 </div>
@@ -168,13 +168,13 @@
             <!-- FAQ Item 5 -->
             <div class="accordion-item border-b border-gray-200">
               <button class="accordion-button flex justify-between items-center w-full py-5 px-5 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none" aria-expanded="false">
-                <span>What's the best way to demonstrate the product as a seller?</span>
+                <span data-translate="faq.q5">What's the best way to demonstrate the product as a seller?</span>
                 <svg class="accordion-icon w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div class="accordion-content">
-                <div class="p-5 text-gray-600">
+                <div class="p-5 text-gray-600" data-translate="faq.a5">
                   We recommend purchasing and using the 10ml tester sample set. This allows customers to experience the product firsthand, and you can offer them a price lower than the original retail price.
                 </div>
               </div>
@@ -182,13 +182,13 @@
             <!-- FAQ Item 6 -->
             <div class="accordion-item border-b border-gray-200">
               <button class="accordion-button flex justify-between items-center w-full py-5 px-5 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none" aria-expanded="false">
-                <span>How can I place an order?</span>
+                <span data-translate="faq.q6">How can I place an order?</span>
                 <svg class="accordion-icon w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div class="accordion-content">
-                <div class="p-5 text-gray-600">
+                <div class="p-5 text-gray-600" data-translate="faq.a6">
                   If you are a registered member, you can visit our store to place your order.<br>
                   <a href="https://www.youtube.com/watch?v=ruWZOpkBwXI" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline font-medium transition-colors duration-200">Video Guide</a>.
                 </div>
@@ -197,13 +197,13 @@
             <!-- FAQ Item 7 -->
             <div class="accordion-item border-b border-gray-200">
               <button class="accordion-button flex justify-between items-center w-full py-5 px-5 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none" aria-expanded="false">
-                <span>How can I receive my order?</span>
+                <span data-translate="faq.q7">How can I receive my order?</span>
                 <svg class="accordion-icon w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div class="accordion-content">
-                <div class="p-5 text-gray-600">
+                <div class="p-5 text-gray-600" data-translate="faq.a7">
                   You can pick up your order from our warehouses in Jeddah or Riyadh after receiving the order readiness notification at the following times :<br>
                   Sunday to Thursday: 6:00 PM – 10:00 PM
                 </div>
@@ -212,13 +212,13 @@
             <!-- FAQ Item 8 -->
             <div class="accordion-item border-b border-gray-200">
               <button class="accordion-button flex justify-between items-center w-full py-5 px-5 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none" aria-expanded="false">
-                <span>Do you offer delivery?</span>
+                <span data-translate="faq.q8">Do you offer delivery?</span>
                 <svg class="accordion-icon w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div class="accordion-content">
-                <div class="p-5 text-gray-600">
+                <div class="p-5 text-gray-600" data-translate="faq.a8">
                   Yes, delivery is available in Jeddah and Riyadh for an additional 15 SAR.<br>
                   Delivery Days: Tuesday, Friday, and Saturday.
                 </div>
@@ -227,13 +227,13 @@
             <!-- FAQ Item 9 -->
             <div class="accordion-item border-b border-gray-200">
               <button class="accordion-button flex justify-between items-center w-full py-5 px-5 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none" aria-expanded="false">
-                <span>What are the pickup and delivery options?</span>
+                <span data-translate="faq.q9">What are the pickup and delivery options?</span>
                 <svg class="accordion-icon w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div class="accordion-content">
-                <div class="p-5 text-gray-600">
+                <div class="p-5 text-gray-600" data-translate="faq.a9">
                   <strong>Pickup:</strong> Jeddah or Riyadh warehouses, Sunday–Thursday, 6:00 PM – 10:00 PM<br><br>
                   <strong>Delivery:</strong> Jeddah & Riyadh only, 15 SAR fee, available Tuesday, Friday, and Saturday.
                 </div>
@@ -242,13 +242,13 @@
             <!-- FAQ Item 10 -->
             <div class="accordion-item border-b border-gray-200">
               <button class="accordion-button flex justify-between items-center w-full py-5 px-5 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none" aria-expanded="false">
-                <span>What payment methods are available?</span>
+                <span data-translate="faq.q10">What payment methods are available?</span>
                 <svg class="accordion-icon w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div class="accordion-content">
-                <div class="p-5 text-gray-600">
+                <div class="p-5 text-gray-600" data-translate="faq.a10">
                   Currently, we only accept cash payments.
                 </div>
               </div>
@@ -256,13 +256,13 @@
             <!-- FAQ Item 11 -->
             <div class="accordion-item">
               <button class="accordion-button flex justify-between items-center w-full py-5 px-5 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none" aria-expanded="false">
-                <span>How can I request a withdrawal?</span>
+                <span data-translate="faq.q11">How can I request a withdrawal?</span>
                 <svg class="accordion-icon w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div class="accordion-content">
-                <div class="p-5 text-gray-600">
+                <div class="p-5 text-gray-600" data-translate="faq.a11">
                   Please refer to our tutorial video for detailed instructions.<br>
                   <a href="https://youtu.be/cOKP5ZXt8f0" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline font-medium transition-colors duration-200">Video Guide</a>.
                 </div>
@@ -277,7 +277,7 @@
     <footer class="bg-gray-900 text-white">
       <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
         <div class="flex justify-center items-center">
-          <p class="text-center text-sm text-gray-400">&copy; 2024 WM2. All rights reserved.</p>
+          <p class="text-center text-sm text-gray-400" data-translate="footer.copyright">&copy; 2024 WM2. All rights reserved.</p>
         </div>
       </div>
     </footer>
