@@ -14,14 +14,48 @@ const translations = {
     'nav.language': 'العربية',
     
     // Home Page
-    'hero.title': 'Welcome to WM2 Distribution Marketing',
-    'hero.subtitle': 'Your trusted partner in quality products and business opportunities',
-    'hero.cta': 'Get Started',
+    'hero.title': 'Unlock Your Potential with WM2',
+    'hero.subtitle': 'Join a community of entrepreneurs and build your own path to financial freedom. Your journey starts now.',
+    'hero.cta': 'Join Now',
+    'hero.learn-more': 'Learn More',
+    
+    // Why Join Section
+    'why-join.title': 'Why Join WM2?',
+    'why-join.subtitle': 'We provide the tools, the community, and the opportunity. You bring the ambition.',
+    
+    // Benefits Section
+    'benefits.financial.title': 'Financial Freedom',
+    'benefits.financial.description': 'Create a new stream of income with a flexible and rewarding compensation plan.',
+    'benefits.boss.title': 'Be Your Own Boss',
+    'benefits.boss.description': 'Enjoy the flexibility of setting your own hours and working from anywhere.',
+    'benefits.community.title': 'Supportive Community',
+    'benefits.community.description': 'Connect with a network of like-minded individuals who will support you on your journey.',
+    
+    // How It Works Section
+    'how-it-works.subtitle': 'How It Works',
+    'how-it-works.title': 'A Simple Path to Success',
+    'how-it-works.description': 'We\'ve simplified the process so you can focus on what matters: growing your business.',
+    
+    // Steps Section
+    'steps.step1.title': '1. Join Our Team',
+    'steps.step1.description': 'Sign up and get instant access to our products and training materials.',
+    'steps.step2.title': '2. Share Products',
+    'steps.step2.description': 'Share high-quality products you believe in with your network.',
+    'steps.step3.title': '3. Earn Rewards',
+    'steps.step3.description': 'Earn commissions and bonuses based on your sales and team performance.',
     
     // About Page
-    'about.title': 'About WM2 Distribution Marketing',
+    'about.title': 'Empowering Ambition',
     'about.mission': 'Our Mission',
-    'about.vision': 'Our Vision',
+    'about.mission-description': 'At WM2, our mission is to provide a platform where individuals can achieve their personal and financial goals through a supportive and innovative distribution marketing model.',
+    
+    // Values Section
+    'values.integrity.title': 'Integrity',
+    'values.integrity.description': 'We operate with unwavering honesty and transparency in everything we do.',
+    'values.community.title': 'Community',
+    'values.community.description': 'We foster a collaborative and supportive environment where everyone can thrive.',
+    'values.innovation.title': 'Innovation',
+    'values.innovation.description': 'We continuously seek better ways to support our members and improve our platform.',
     
     // FAQ Page
     'faq.title': 'Frequently Asked Questions',
@@ -34,7 +68,7 @@ const translations = {
     'faq.q4': 'How can I earn money?',
     'faq.q5': 'What\'s the best way to demonstrate the product as a seller?',
     'faq.q6': 'How can I place an order?',
-    'faq.q7': 'How can I receive my order?',
+    'faq.q7': 'When can I pickup my order?',
     'faq.q8': 'Do you offer delivery?',
     'faq.q9': 'What are the pickup and delivery options?',
     'faq.q10': 'What payment methods are available?',
@@ -47,7 +81,7 @@ const translations = {
     'faq.a4': '• By directly selling the products.<br>• By earning commission from purchases made by members you invited via your referral link.',
     'faq.a5': 'We recommend purchasing and using the 10ml tester sample set. This allows customers to experience the product firsthand, and you can offer them a price lower than the original retail price.',
     'faq.a6': 'If you are a registered member, you can visit our store to place your order.<br><a href="https://www.youtube.com/watch?v=ruWZOpkBwXI" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline font-medium transition-colors duration-200">Video Guide</a>.',
-    'faq.a7': 'You can pick up your order from our warehouses in Jeddah or Riyadh after receiving the order readiness notification at the following times:<br>Sunday to Thursday: 6:00 PM – 10:00 PM',
+    'faq.a7': 'You can collect your order from our warehouses in Jeddah or Riyadh after receiving a few suggested pickup time slots notification.<br>Usual pickup hours: Sunday to Thursday, 6:00 PM – 10:00 PM.',
     'faq.a8': 'Yes, delivery is available in Jeddah and Riyadh for an additional 15 SAR.<br>Delivery Days: Tuesday, Friday, and Saturday.',
     'faq.a9': '<strong>Pickup:</strong> Jeddah or Riyadh warehouses, Sunday–Thursday, 6:00 PM – 10:00 PM<br><br><strong>Delivery:</strong> Jeddah & Riyadh only, 15 SAR fee, available Tuesday, Friday, and Saturday.',
     'faq.a10': 'Currently, we only accept cash payments.',
@@ -67,14 +101,48 @@ const translations = {
     'nav.language': 'English',
     
     // Home Page
-    'hero.title': 'مرحباً بكم في WM2 للتوزيع والتسويق',
-    'hero.subtitle': 'شريككم الموثوق في المنتجات عالية الجودة وفرص الأعمال',
-    'hero.cta': 'ابدأ الآن',
+    'hero.title': 'أطلق إمكانياتك مع WM2',
+    'hero.subtitle': 'انضم إلى مجتمع من رواد الأعمال وابن طريقك الخاص نحو الحرية المالية. رحلتك تبدأ الآن.',
+    'hero.cta': 'انضم الآن',
+    'hero.learn-more': 'اعرف المزيد',
+    
+    // Why Join Section
+    'why-join.title': 'لماذا تنضم إلى WM2؟',
+    'why-join.subtitle': 'نحن نوفر الأدوات والمجتمع والفرصة. أنت تجلب الطموح.',
+    
+    // Benefits Section
+    'benefits.financial.title': 'الحرية المالية',
+    'benefits.financial.description': 'أنشئ مصدر دخل جديد مع خطة تعويض مرنة ومجزية.',
+    'benefits.boss.title': 'كن مدير نفسك',
+    'benefits.boss.description': 'استمتع بمرونة تحديد ساعات عملك والعمل من أي مكان.',
+    'benefits.community.title': 'مجتمع داعم',
+    'benefits.community.description': 'تواصل مع شبكة من الأفراد المتشابهين في التفكير الذين سيدعمونك في رحلتك.',
+    
+    // How It Works Section
+    'how-it-works.subtitle': 'كيف يعمل',
+    'how-it-works.title': 'مسار بسيط للنجاح',
+    'how-it-works.description': 'لقد بسّطنا العملية حتى تتمكن من التركيز على ما يهم: تطوير عملك.',
+    
+    // Steps Section
+    'steps.step1.title': '1. انضم إلى فريقنا',
+    'steps.step1.description': 'سجل واحصل على وصول فوري لمنتجاتنا ومواد التدريب.',
+    'steps.step2.title': '2. شارك المنتجات',
+    'steps.step2.description': 'شارك منتجات عالية الجودة تؤمن بها مع شبكتك.',
+    'steps.step3.title': '3. اربح المكافآت',
+    'steps.step3.description': 'اربح العمولات والمكافآت بناءً على مبيعاتك وأداء فريقك.',
     
     // About Page
-    'about.title': 'عن WM2 للتوزيع والتسويق',
+    'about.title': 'تمكين الطموح',
     'about.mission': 'مهمتنا',
-    'about.vision': 'رؤيتنا',
+    'about.mission-description': 'في WM2، مهمتنا هي توفير منصة يمكن للأفراد من خلالها تحقيق أهدافهم الشخصية والمالية من خلال نموذج تسويق توزيع داعم ومبتكر.',
+    
+    // Values Section
+    'values.integrity.title': 'النزاهة',
+    'values.integrity.description': 'نحن نعمل بأمانة وشفافية لا تتزعزع في كل ما نقوم به.',
+    'values.community.title': 'المجتمع',
+    'values.community.description': 'نحن نعزز بيئة تعاونية وداعمة حيث يمكن للجميع الازدهار.',
+    'values.innovation.title': 'الابتكار',
+    'values.innovation.description': 'نحن نسعى باستمرار إلى طرق أفضل لدعم أعضائنا وتحسين منصتنا.',
     
     // FAQ Page
     'faq.title': 'الأسئلة الشائعة',
@@ -87,7 +155,7 @@ const translations = {
     'faq.q4': 'كيف يمكنني كسب المال؟',
     'faq.q5': 'ما هي أفضل طريقة لعرض المنتج كبائع؟',
     'faq.q6': 'كيف يمكنني تقديم طلب؟',
-    'faq.q7': 'كيف يمكنني استلام طلبي؟',
+    'faq.q7': 'متى يمكنني استلام طلبي؟',
     'faq.q8': 'هل تقدمون خدمة التوصيل؟',
     'faq.q9': 'ما هي خيارات الاستلام والتوصيل؟',
     'faq.q10': 'ما هي طرق الدفع المتاحة؟',
@@ -100,7 +168,7 @@ const translations = {
     'faq.a4': '• من خلال بيع المنتجات مباشرة.<br>• من خلال كسب العمولة من المشتريات التي يقوم بها الأعضاء الذين دعوتهم عبر رابط الإحالة الخاص بك.',
     'faq.a5': 'نوصي بشراء واستخدام مجموعة العينات التجريبية 10 مل. هذا يسمح للعملاء بتجربة المنتج مباشرة، ويمكنك تقديم سعر أقل من سعر البيع بالتجزئة الأصلي.',
     'faq.a6': 'إذا كنت عضواً مسجلاً، يمكنك زيارة متجرنا لتقديم طلبك.<br><a href="https://www.youtube.com/watch?v=ruWZOpkBwXI" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline font-medium transition-colors duration-200">دليل الفيديو</a>.',
-    'faq.a7': 'يمكنك استلام طلبك من مستودعاتنا في جدة أو الرياض بعد تلقي إشعار جاهزية الطلب في الأوقات التالية:<br>الأحد إلى الخميس: 6:00 مساءً – 10:00 مساءً',
+    'faq.a7': 'يمكنك استلام طلبك من مستودعاتنا في جدة أو الرياض بعد تلقي إشعار بمواعيد الاستلام المقترحة.<br>ساعات الاستلام المعتادة: الأحد إلى الخميس، 6:00 مساءً – 10:00 مساءً.',
     'faq.a8': 'نعم، التوصيل متاح في جدة والرياض مقابل 15 ريال إضافية.<br>أيام التوصيل: الثلاثاء والجمعة والسبت.',
     'faq.a9': '<strong>الاستلام:</strong> مستودعات جدة أو الرياض، الأحد–الخميس، 6:00 مساءً – 10:00 مساءً<br><br><strong>التوصيل:</strong> جدة والرياض فقط، رسوم 15 ريال، متاح الثلاثاء والجمعة والسبت.',
     'faq.a10': 'حالياً، نقبل الدفع النقدي فقط.',
